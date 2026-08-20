@@ -1,0 +1,577 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+
+<section class="registration-page">
+
+    <div class="container py-5">
+
+        <!-- Page Heading -->
+        <div class="text-center mb-5">
+
+            <span class="section-label">
+                JOIN HTK
+            </span>
+
+            <h1>
+                Register for
+                <span>HTK Performing Arts</span>
+            </h1>
+
+            <p class="registration-intro">
+                Complete the form below to register a learner for
+                HTK Performing Arts Institute.
+            </p>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9">
+
+                <div class="registration-card">
+
+                    <form method="post"
+                          asp-controller="Home"
+                          asp-action="Register">
+
+
+                        <!-- LEARNER INFORMATION -->
+
+                        <div class="form-section">
+
+                            <div class="form-section-heading">
+
+                                <div class="form-icon">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+
+                                <div>
+                                    <h4>Learner Information</h4>
+
+                                    <p>
+                                        Please provide the learner's details.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label for="FirstName"
+                                           class="form-label">
+
+                                        First Name
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="FirstName"
+                                           name="FirstName"
+                                           placeholder="Enter first name"
+                                           required />
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="Surname"
+                                           class="form-label">
+
+                                        Surname
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="Surname"
+                                           name="Surname"
+                                           placeholder="Enter surname"
+                                           required />
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="DateOfBirth"
+                                           class="form-label">
+
+                                        Date of Birth
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input type="date"
+                                           class="form-control"
+                                           id="DateOfBirth"
+                                           name="DateOfBirth"
+                                           required />
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="Gender"
+                                           class="form-label">
+
+                                        Gender
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <select class="form-select"
+                                            id="Gender"
+                                            name="Gender"
+                                            required>
+
+                                        <option value="">
+                                            Select gender
+                                        </option>
+
+                                        <option value="Female">
+                                            Female
+                                        </option>
+
+                                        <option value="Male">
+                                            Male
+                                        </option>
+
+                                        <option value="Other">
+                                            Other
+                                        </option>
+
+                                        <option value="PreferNotToSay">
+                                            Prefer not to say
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="School"
+                                           class="form-label">
+
+                                        School
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="School"
+                                           name="School"
+                                           placeholder="Enter school name"
+                                           required />
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="Grade"
+                                           class="form-label">
+
+                                        Grade
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <select class="form-select"
+                                            id="Grade"
+                                            name="Grade"
+                                            required>
+
+                                        <option value="">
+                                            Select grade
+                                        </option>
+
+                                        <option>Grade R</option>
+                                        <option>Grade 1</option>
+                                        <option>Grade 2</option>
+                                        <option>Grade 3</option>
+                                        <option>Grade 4</option>
+                                        <option>Grade 5</option>
+                                        <option>Grade 6</option>
+                                        <option>Grade 7</option>
+                                        <option>Grade 8</option>
+                                        <option>Grade 9</option>
+                                        <option>Grade 10</option>
+                                        <option>Grade 11</option>
+                                        <option>First year Student</option>
+                                        <option>Second Year Student</option>
+                                        <option>Third Year Student</option>
+                                        <option>Fourth Year Student</option>
+                                        <option>Fifth Year Student</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <hr class="form-divider" />
+
+
+                        <!-- PROGRAMME -->
+
+                        <div class="form-section">
+
+                            <div class="form-section-heading">
+
+                                <div class="form-icon">
+                                    <i class="bi bi-stars"></i>
+                                </div>
+
+                                <div>
+
+                                    <h4>Programme Selection</h4>
+
+                                    <p>
+                                        Select the performing arts programme.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label for="Programme"
+                                           class="form-label">
+
+                                        Programme
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <select class="form-select"
+                                            id="Programme"
+                                            name="Programme"
+                                            required>
+
+                                        <option value="">
+                                            Select a programme
+                                        </option>
+
+                                        <option value="Modelling">
+                                            Modelling
+                                        </option>
+
+                                        <option value="Acting">
+                                            Acting
+                                        </option>
+
+                                        <option value="Dancing">
+                                            Dancing
+                                        </option>
+
+                                        <option value="Music">
+                                            Music
+                                        </option>
+
+                                        <option value="Poetry">
+                                            Poetry
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="Attendance"
+                                           class="form-label">
+
+                                        Preferred Attendance
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <select class="form-select"
+                                            id="Attendance"
+                                            name="Attendance"
+                                            required>
+
+                                        <option value="">
+                                            Select attendance
+                                        </option>
+
+                                        <option value="Saturday">
+                                            Saturday (09:00 - 16:00)
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <hr class="form-divider" />
+
+
+                        <!-- PARENT / GUARDIAN -->
+
+                        <div class="form-section">
+
+                            <div class="form-section-heading">
+
+                                <div class="form-icon">
+                                    <i class="bi bi-people-fill"></i>
+                                </div>
+
+                                <div>
+
+                                    <h4>Parent / Guardian Information</h4>
+
+                                    <p>
+                                        Please provide the parent or guardian's
+                                        contact details.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="row g-4">
+
+                                <div class="col-md-6">
+
+                                    <label for="GuardianName"
+                                           class="form-label">
+
+                                        Parent / Guardian Name
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           id="GuardianName"
+                                           name="GuardianName"
+                                           placeholder="Full name"
+                                           required />
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="GuardianPhone"
+                                           class="form-label">
+
+                                        Contact Number
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <input type="tel"
+                                           class="form-control"
+                                           id="GuardianPhone"
+                                           name="GuardianPhone"
+                                           placeholder="e.g. 072 123 4567"
+                                           required />
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="GuardianEmail"
+                                           class="form-label">
+
+                                        Email Address
+
+                                    </label>
+
+                                    <input type="email"
+                                           class="form-control"
+                                           id="GuardianEmail"
+                                           name="GuardianEmail"
+                                           placeholder="example@email.com" />
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label for="EmergencyContact"
+                                           class="form-label">
+
+                                        Emergency Contact
+
+                                    </label>
+
+                                    <input type="tel"
+                                           class="form-control"
+                                           id="EmergencyContact"
+                                           name="EmergencyContact"
+                                           placeholder="Emergency contact number" />
+
+                                </div>
+
+
+                                <div class="col-12">
+
+                                    <label for="Address"
+                                           class="form-label">
+
+                                        Address
+                                        <span>*</span>
+
+                                    </label>
+
+                                    <textarea class="form-control"
+                                              id="Address"
+                                              name="Address"
+                                              rows="3"
+                                              placeholder="Enter residential address"
+                                              required></textarea>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <hr class="form-divider" />
+
+
+                        <!-- ADDITIONAL INFORMATION -->
+
+                        <div class="form-section">
+
+                            <div class="form-section-heading">
+
+                                <div class="form-icon">
+                                    <i class="bi bi-chat-left-text-fill"></i>
+                                </div>
+
+                                <div>
+
+                                    <h4>Additional Information</h4>
+
+                                    <p>
+                                        Tell us anything else we should know.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-4">
+
+                                <label for="Experience"
+                                       class="form-label">
+
+                                    Previous Performing Arts Experience
+
+                                </label>
+
+                                <textarea class="form-control"
+                                          id="Experience"
+                                          name="Experience"
+                                          rows="4"
+                                          placeholder="Tell us about any previous experience..."></textarea>
+
+                            </div>
+
+
+                            <div class="mb-4">
+
+                                <label for="Message"
+                                       class="form-label">
+
+                                    Additional Message
+
+                                </label>
+
+                                <textarea class="form-control"
+                                          id="Message"
+                                          name="Message"
+                                          rows="4"
+                                          placeholder="Is there anything else you would like us to know?"></textarea>
+
+                            </div>
+
+
+                            <div class="form-check">
+
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       id="Terms"
+                                       name="Terms"
+                                       required />
+
+                                <label class="form-check-label"
+                                       for="Terms">
+
+                                    I confirm that the information provided
+                                    is correct and I agree to the HTK
+                                    registration terms.
+
+                                    <span>*</span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SUBMIT -->
+
+                        <div class="registration-submit">
+
+                            <button type="submit"
+                                    class="btn btn-htk btn-lg">
+
+                                Submit Registration
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </button>
+
+                            <p>
+                                We will contact you using the details
+                                provided after your registration.
+                            </p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
