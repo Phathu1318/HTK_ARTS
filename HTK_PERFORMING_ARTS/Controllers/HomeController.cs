@@ -16,6 +16,34 @@ namespace HTK_PERFORMING_ARTS.Controllers
             return View();
         }
 
+        public IActionResult Modelling()
+        {
+            return View();
+        }
+
+        public IActionResult Acting()
+        {
+            return View();
+        }
+
+        public IActionResult Dancing()
+        {
+            return View();
+        }
+
+        public IActionResult Music()
+        {
+            return View();
+        }
+
+        public IActionResult Poetry()
+        {
+            return View();
+        }
+
+
+
+
         public IActionResult Privacy()
         {
             return View();
